@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var a int64 = 100
-	fmt.Println(a)
-	// todo 3 day changes
+	fmt.Println("hello world")
+	fmt.Println("zizizi")
+	// todo  changes to 20211126
 }
