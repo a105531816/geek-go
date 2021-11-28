@@ -1,12 +1,17 @@
 package main
 
-import (
-	"fmt"
+//计算两个圆的面积和
+
+import "fmt"
+
+//声明常量π
+const (
+	pi float32 = 3.1415926
 )
 
 func main() {
-	fmt.Println("hello\tworld\n!")   // \t ：制表位，实现对齐功能
-	fmt.Println("hello\nworld\n!")   // \n ：换行符
-	fmt.Println("hello\\ world\\ !") // \\ ：一个\
-	fmt.Println("hello\rworld\r!")   // \r ：一个回车，会从当前行的最前面开始输出，替换掉以前的版本。
+	var r1 float32 = 11
+	var r2 float32 = 15
+	var sum2 = (pi * r1 * r1) + (pi * r2 * r2)
+	fmt.Printf("两个圆的面积和为：%.3f", sum2)
 }
