@@ -8,6 +8,23 @@ import "fmt"
 //判断真map或者假map
 
 func main() {
-	list := map[string]int{"张1": 1, "shao": 2}
-	fmt.Println(a)
+	list := map[string]int{
+		"张1": 1, "张2": 12, "张3": 13, "张4": 41, "张5": 51,
+		"张6": 71, "张7": 91, "张8": 17, "张9": 13, "张10": 12,
+		"张11": 13, "张12": 14, "张13": 31, "张14": 17, "张15": 12,
+		"张16": 21, "张17": 14, "张18": 41, "张19": 19, "张20": 18,
+	}
+	var NewMap map[string][]int
+	var a string
+	var b int
+	var c []string
+	var d []int
+	var e int
+	for i1, i2 := range list {
+		if i2 > b {
+			d[e] = b
+			c[e] = i1
+			b = i2
+		}
+	}
 }

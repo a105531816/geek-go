@@ -13,6 +13,7 @@ func main() {
 	var name, sex [3]string
 	var height, weight, age [3]float64
 	var SexWeight [3]int
+	var AfatRate [3]float64
 	//输入三个人的信息
 	for i := 0; i < len(name); i++ {
 
@@ -35,6 +36,7 @@ func main() {
 	for i := 0; i < len(name); i++ {
 		bmi := weight[i] / (height[i] * height[i])
 		fatRate := 1.2*bmi + 0.23*float64(age[i]) - 5.4 - 10.8*float64(SexWeight[i])
+		AfatRate[i] = fatRate
 		switch SexWeight[i] {
 		case 0:
 			if age[i] >= 18 && age[i] <= 39 {
@@ -118,4 +120,9 @@ func main() {
 			}
 		}
 	}
+	var sum float64
+	for _, i2 := range AfatRate {
+		sum = sum + i2
+	}
+	fmt.Printf("总人数：%v，平均体脂率：%v\n", 3, sum/3)
 }
