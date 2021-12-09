@@ -20,6 +20,10 @@ func main() {
 	var c []string
 	var d []int
 	var e int
+	funcName(list, b, d, e, c)
+}
+
+func funcName(list map[string]int, b int, d []int, e int, c []string) {
 	for i1, i2 := range list {
 		if i2 > b {
 			d[e] = b
