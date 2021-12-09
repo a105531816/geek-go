@@ -10,8 +10,9 @@ func (t *Test) Close() {
 	fmt.Println(t.name, " closed")
 }
 func main() {
-	ts := []Test{{"a"}, {"b"}, {"c"}}
+	ts := []Test{{"a"}, {"b"}, {"c"}, {"d"}}
 	for _, t := range ts {
+		fmt.Println(t)
 		defer t.Close()
 	}
 }
