@@ -1,5 +1,0 @@
-package duixiang
-
-func main() {
-
-}
