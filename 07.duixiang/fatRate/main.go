@@ -4,11 +4,12 @@ import "fmt"
 
 func main() {
 	frsvc := &fatRateService{s: GetFatRateSuggestion()}
+
 	//fakePerson := getFakePersonInfo()
 	//fmt.Println(frsvc.GiveSUggestionToPerson(fakePerson))
 
 	for {
-		p:=getPersonInfoFromInput()
+		p := getPersonInfoFromInput()
 		fmt.Println(frsvc.GiveSUggestionToPerson(p))
 	}
 }
